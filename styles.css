@@ -1,0 +1,83 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Kumbh Sans', sans-serif;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url(images/bg-pattern-top.svg), url(images/bg-pattern-bottom.svg);
+    background-color: hsl(185, 75%, 39%);
+    background-position: bottom 50vh right 50vw, top 50vh left 50vw;
+    background-repeat: no-repeat, no-repeat;
+    background-attachment: fixed, fixed;
+}
+
+.main-box {
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 0.5rem;
+    border-radius: 1rem;
+    overflow: hidden;
+    box-shadow: 1px 1px 30px rgba(107, 107, 107, 0.37);
+}
+
+.profile-pic {
+   position: absolute;
+   top: 85px;
+   align-items: center;
+   border-radius: 50%;
+   border: 5px solid white;
+}
+
+.name-age {
+    display: flex;
+    margin-top: 4rem;
+    column-gap: 0.5rem;
+}
+
+.name {
+    font-weight: 700;
+}
+
+.age, .city {
+    color: hsl(0, 0%, 59%);
+}
+
+.city {
+    font-size: 0.9rem;
+}
+
+.stats {
+    display: grid;
+    width: 100%;
+    margin-top: 1rem;
+    padding: 2rem;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 1rem;
+    row-gap: 2.1px;
+    border-top: 1px solid hsla(0, 0%, 59%, .3);
+}
+
+.stats > p {
+    text-align: center;
+}
+
+.numbers {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.description {
+    font-size: 0.7rem;
+    color: hsl(0, 0%, 59%);
+    letter-spacing: 0.07rem;
+}
